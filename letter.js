@@ -1,4 +1,4 @@
-function letter(underlyingCharacter) {
+function Letter(underlyingCharacter) {
     this.underlyingCharacter = underlyingCharacter;
     this.guess = false;
     this.guessCheck = function () {
@@ -16,8 +16,8 @@ function letter(underlyingCharacter) {
     }
 
 }
-var firstLetter = new letter("a");
-firstLetter.compare("a");
-firstLetter.guessCheck();
+// var firstLetter = new Letter("b");
+// firstLetter.compare("a");
+// firstLetter.guessCheck();
 
-// module.exports = letter;
+module.exports = Letter;

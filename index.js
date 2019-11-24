@@ -5,20 +5,38 @@ wordsToGuess = ["dinosaur", "popeye", "smurf", "obey", "sarcastic"]
 var missed = 0
 var wins = 0
 
-// var guessAWord = function () {
-//     if (missed < 10) {
-//         inquirer.prompt([
-//             {
-//                 name: "letter",
-//                 message: "Guess a letter"
-//             }
-//         ]).then(function (answer) {
+var generateWord = function () {
+    wordRandom = wordsToGuess[Math.floor(Math.random() * 4)];
+    var wordToGuess = new Word()
+    wordToGuess.toString(wordRandom);
+    var guessAWord = function () {
 
-//         })
-//     }
-//     else {
-//         console.log("You lost!")
-//     }
-// }
-var tryOut = new Word()
-tryOut.toString("dinosaur");
+        if (missed < 10) {
+            inquirer.prompt([
+                {
+                    name: "letterGuessed",
+                    message: "Guess a letter"
+                }
+            ]).then(function (answer) {
+                wordToGuess.checkLetter(answer.letterGuessed);
+                guessAWord();
+            })
+            
+
+        }
+        else {
+            console.log("You lost!")
+        }
+        
+    }
+    guessAWord();
+    
+}
+generateWord();
+
+
+
+
+// var wordToGuess = new Word()
+// wordToGuess.toString("dinosaur");
+// wordToGuess.checkLetter("d");

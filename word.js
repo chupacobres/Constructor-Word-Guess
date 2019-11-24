@@ -12,11 +12,9 @@ function Word() {
     this.checkLetter = function (character){
         for (i=0;i<this.letterArray.length;i++){
             this.letterArray[i].compare(character);
-
             this.letterArray[i].guessCheck();
+            
         }
-        // console.log(this.letterArray)
-
     }
     
 }

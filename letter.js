@@ -13,9 +13,9 @@ function Letter(underlyingCharacter) {
         if (userGuess === this.underlyingCharacter) {
             this.guess = true;
         }
-        console.log("Underlying character: " + this.underlyingCharacter)
-        console.log(userGuess);
-        console.log(this.guess);
+        // console.log("Underlying character: " + this.underlyingCharacter)
+        // console.log(userGuess);
+        // console.log(this.guess);
     }
 
 }

@@ -7,13 +7,16 @@ function Word() {
             var letterObject = new Letter(wordChosen[i]);
             this.letterArray.push(letterObject);
         }
-        console.log(this.letterArray)
+        
     }
     this.checkLetter = function (character){
         for (i=0;i<this.letterArray.length;i++){
             this.letterArray[i].compare(character);
+
+            this.letterArray[i].guessCheck();
         }
-        console.log(this.letterArray)
+        // console.log(this.letterArray)
+
     }
     
 }

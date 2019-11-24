@@ -19,18 +19,22 @@ var generateWord = function () {
                 }
             ]).then(function (answer) {
                 wordToGuess.checkLetter(answer.letterGuessed);
+                // for (i = 0; i < wordRandom.length; i++) {
+                //     Word.LetterArray.guessCheck();
+                // }
+                
                 guessAWord();
             })
-            
 
+            
         }
         else {
             console.log("You lost!")
         }
-        
+
     }
     guessAWord();
-    
+
 }
 generateWord();
 

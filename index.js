@@ -8,6 +8,7 @@ var generateWord = function () {
     wordRandom = wordsToGuess[Math.floor(Math.random() * 4)];
     var wordToGuess = new Word()
     wordToGuess.toString(wordRandom);
+    
     var guessAWord = function () {
 
         if (count < (wordRandom.length + 8)) {

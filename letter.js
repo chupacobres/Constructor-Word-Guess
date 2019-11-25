@@ -4,10 +4,10 @@ function Letter(underlyingCharacter) {
     this.guessCheck = function () {
 
         if (this.guess === true) {
-            console.log(this.underlyingCharacter)
+            return this.underlyingCharacter;
         }
         else {
-            console.log("_");
+            return "_";
         }
     }
     this.compare = function (userGuess) {

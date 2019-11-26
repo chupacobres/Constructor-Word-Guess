@@ -3,7 +3,6 @@ var inquirer = require("inquirer");
 
 wordsToGuess = ["dinosaur", "popeye", "smurf", "obey", "sarcastic"]
 var count = 0
-
 var generateWord = function () {
     wordRandom = wordsToGuess[Math.floor(Math.random() * 4)];
     var wordToGuess = new Word()

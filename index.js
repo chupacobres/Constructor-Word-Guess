@@ -7,9 +7,10 @@ var generateWord = function () {
     wordRandom = wordsToGuess[Math.floor(Math.random() * 4)];
     var wordToGuess = new Word()
     wordToGuess.toString(wordRandom);
-    
-    var guessAWord = function () {
 
+    var guessAWord = function () {
+          
+        
         if (count < (wordRandom.length + 8)) {
             inquirer.prompt([
                 {
@@ -17,12 +18,13 @@ var generateWord = function () {
                     message: "Guess a letter"
                 }
             ]).then(function (answer) {
-                wordToGuess.checkLetter(answer.letterGuessed);   
-                count++;             
+                wordToGuess.checkLetter(answer.letterGuessed);
+                count++;
+                
                 guessAWord();
             })
 
-            
+
         }
         else {
             console.log("You lost!")

@@ -10,7 +10,7 @@ The letter.js file contains a constructor (Letter) defining if the word is guess
 
 The word.js file, through a constructor (Word) creates an object with the letters of the word and uses the Letter constructor to create an array with words and underscores (in case the letter is not guessed).
 
-index.js is in charge of bringing the logic, concatenating the word object and displaying it to the screen, as well as the code to alod user input through inquire package. You need to install all necessary packages to run tha game on the command line.
+index.js is in charge of bringing the logic, concatenating the word object and displaying it to the screen, as well as the code to aloud user input through npm inquire package. You need to install all necessary packages to run tha game on the command line.
 
 ### The App in action
 

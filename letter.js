@@ -1,6 +1,7 @@
 function Letter(underlyingCharacter) {
     this.underlyingCharacter = underlyingCharacter;
     this.guess = false;
+    
     this.guessCheck = function () {
 
         if (this.guess === true) {
@@ -8,6 +9,8 @@ function Letter(underlyingCharacter) {
         }
         else {
             return "_";
+            
+
         }
     }
     this.compare = function (userGuess) {

@@ -18,7 +18,6 @@ function Word() {
         }
         if (!this.displayLetter.includes("_")){
             console.log("You win!");
-            break;
         }
         console.log(this.displayLetter.join(" "));
 
